@@ -27,7 +27,7 @@ export default function Menu() {
 
   return (
     <div>
-      <div className="p-4 md:p-12 flex justify-between items-center md:items-start md:justify-start md:flex-col md:min-h-screen space-y-4 shadow-sm shadow-slate-500 rounded-sm ">
+      <div className="p-4  md:p-12 fixed top-0 h-16 md:min-h-screen z-10 bg-white w-full md:w-auto md:top-0 md:left-0 flex justify-between items-center md:items-start md:justify-start md:flex-col space-y-4 shadow-sm shadow-slate-500 rounded-sm ">
         <Link href="/">
           <h1 className="font-semibold text-xl flex items-center">
             Brian VandenAkker
@@ -49,7 +49,7 @@ export default function Menu() {
         </div>
       </div>
       <div
-        className={`m-2 shadow-slate-500 shadow-sm rounded-sm transition-opacity duration-500 ${
+        className={`fixed top-16 bg-white w-full shadow-slate-500 shadow-sm rounded-sm transition-opacity duration-500 ${
           isDropdownOpen ? "opacity-100 block" : "opacity-0 hidden"
         }`}
       >
