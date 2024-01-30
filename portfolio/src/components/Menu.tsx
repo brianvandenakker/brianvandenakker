@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import { Bars4Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import Links from "./Links";
 
 const MenuItems = ({ setDropdownOpen }) => (
-  <ul className="space-y-2 p-2 flex flex-col">
-    <Link onClick={() => setDropdownOpen(false)} href="/projects">
+  <ul className="space-y-2 p-4 flex flex-col">
+    <Links />
+    {/* <Link onClick={() => setDropdownOpen(false)} href="/projects">
       Projects
     </Link>
     <Link onClick={() => setDropdownOpen(false)} href="/reading">
@@ -19,7 +21,7 @@ const MenuItems = ({ setDropdownOpen }) => (
     </Link>
     <Link onClick={() => setDropdownOpen(false)} href="/contact">
       Contact
-    </Link>
+    </Link> */}
   </ul>
 );
 export default function Menu() {
@@ -27,7 +29,7 @@ export default function Menu() {
 
   return (
     <div>
-      <div className="p-4  md:p-12 fixed top-0 h-16 md:min-h-screen z-10 bg-white w-full md:w-auto md:top-0 md:left-0 flex justify-between items-center md:items-start md:justify-start md:flex-col space-y-4 shadow-sm shadow-slate-500 rounded-sm ">
+      <div className="p-4 bg-b md:p-12 fixed top-0 h-16 md:min-h-screen z-10 bg-white w-full md:w-auto md:top-0 md:left-0 flex justify-between items-center md:items-start md:justify-start md:flex-col space-y-4 shadow-sm shadow-slate-500 rounded-sm ">
         <Link href="/">
           <h1 className="font-semibold text-xl flex items-center">
             Brian VandenAkker
